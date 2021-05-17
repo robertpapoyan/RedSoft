@@ -6,8 +6,8 @@ class Test_Add_To_Busket():
     baseURL = "https://specialty.ru/"
 
     def test_add_to_busket(self):
-        self.driver = webdriver.Chrome(executable_path="C://Users//Administrator//Desktop//QA//Drivers//chromedriver.exe")
-        # self.driver.maximize_window()
+        self.driver = webdriver.Chrome(executable_path="chromedriver.exe")
+        self.driver.maximize_window()
         self.driver.get(self.baseURL)
         time.sleep(2)
         self.web = NecessaryPageObjects.NecessaryPageObjects(self.driver)
